@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Legacy Project</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="importmap">{ "imports": {
+            "three": "//unpkg.com/three/build/three.module.js",
+            "three/addons/": "//unpkg.com/three/examples/jsm/"
+          }}</script>
+          <script src="//unpkg.com/globe.gl"></script>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+    </head>
+        <body>
+          <div class="wrapper" id="js-wrapper">
+                <div class="sections" id="js-slideContainer">
+                <section class="section" id="first-section">
+                    <div class="layer"></div> 
+                    <div class="content content-1">
+                        <div class="legacy-wrapper">
+                            <div class="legacy-container">
+                              <div class="legacy-background">the legacy project</div>
+                              <div class="legacy-overlay">it's your story</div>
+                            </div>
+                          </div>
+                    </div>
+                </section>
+                <section class="section" id="second-section">
+                    <div class="layer"></div> 
+                    <div class="quote-wrapper">
+                        <div class="quote-container">
+                            <div class="quote-background">“What you do is your history. What you set in motion is your legacy.”</div>
+                            <div class="quote-author">LEONARD SWEET</div>
+                        </div>
+                    </div>
+                </section>                
+                <section class="section" id="third-section">
+                        <div class="globe-container">
+                            <div class="container">
+                                <!-- <h2 class="text-center m-4 text-light">Nature Bio Foods</h2> -->
+                                <div class="row m-2 ">
+                                <div class="offset-md-3 col-md-6 mt-3">
+                                <div class="card text-center w-100"> 
+                                    <div class="card-body text-light">
+                                    <input type="text" class="w-80" style="width: 80%" id="searchBox" placeholder="Enter name or code to search" />
+                                    <button id="searchBtn" class="btn btn-secondary">Find</button>
+                                    </div>
+                                </div>
+                                </div></div>                      
+                            </div>
+                            <div id="globeViz"></div>
+                            <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalLabel">Farmer Info</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p id="modalText"></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </section>
+                </div>
+           </div>
+          
+          <!--Scrolling Plugin-->
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script>
+
+          <!-- Bootstrap JS & dependencies -->
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+          <!-- <script type="module">
+              import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
+          </script> -->
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+          <script src="script.js"></script>
+    </body>
+</html>

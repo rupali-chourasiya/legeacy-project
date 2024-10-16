@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+  }
+
+body { 
+    background-color: #000011 !important;
+  }
+
+
+  #globeViz {
+    width: 80% !important;
+  }
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sections {
+  width: 300%; /* Updated width for two sections */
+  height: 100%;
+}
+
+.section {
+  height: 100vh;
+  width: calc(100% / 3); /* Updated to show two sections */
+  position: relative;
+  display: flex;
+  background-size: cover;
+  float: left;
+  justify-content: center;
+}
+
+#first-section, #second-section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.legacy-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.legacy-container {
+  position: relative;
+  text-align: center;
+  width: max-content; /* Ensures content width fits the text */
+}
+
+.legacy-background {
+  font-size: 6rem; /* Large text */
+  color: white; /* White text color */
+  position: relative;
+  z-index: 1;
+  font-family: 'serif'; /* Choose a suitable font */
+}
+
+.legacy-overlay {
+  font-size: 2.5rem; /* Slightly smaller overlay text */
+  color: #f28b54; /* Orange color */
+  font-family: 'cursive'; /* Choose a suitable cursive font */
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.9; /* Slight transparency to blend nicely */
+}
+
+.quote-container {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100%; /* Full height of the section */
+}
+
+.quote-background {
+  font-size: 2.5rem; /* Smaller text for the quote */
+  color: white;
+  font-family: 'serif'; /* Choose a suitable font */
+  text-align: center; /* Center text */
+  position: relative;
+  z-index: 1;
+  font-style: italic; /* Italic for the quote */
+}
+
+.quote-background:before {
+  content: open-quote;
+  font-size: 3rem; /* Slightly smaller size for quotation mark */
+  color: #f28b54; /* Optional color for quotes */
+}
+
+.quote-background:after {
+  content: close-quote;
+  font-size: 3rem; /* Slightly smaller size for quotation mark */
+  color: #f28b54;
+}
+
+.quote-author {
+  font-size: 1.5rem; /* Smaller text for the author */
+  color: #f28b54; /* Orange color */
+  font-family: 'cursive';
+  margin-top: 1rem; /* Add space between quote and author */
+  text-align: center; /* Center text */
+  z-index: 9999;
+}
+
+/* .section:nth-child(2) {
+  background-image: url(./images/1-1.jpg);
+} */
+
+  /* #globeViz { height: 100%; } */
+  .marker {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+  }
+  .marker img {
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid white; 
+    filter: grayscale(100%);
+   }
+
+.card{
+  background-color: #000011 !important;
+  color: white !important;
+}
+
+.layer {
+    background-color: #000011;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content-1 {
+    width: 50%;
+    color: #fff;
+    position: relative;
+    text-align: center;
+  }
+  
+  .section p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
